@@ -1,0 +1,52 @@
+.propertyWrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.propertyName {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+  margin-right: 2rem;
+}
+
+.propertyList {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.propertyItems {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.propertyButtons {
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+  background-color: white;
+  border: solid #0d99ff 0.25rem;
+}
+
+.filledPropertyButtons {
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+  background-color: #0d99ff;
+  border: solid #0d99ff 0.25rem;
+}
