@@ -12,13 +12,14 @@
   background-color: white;
   border-radius: 1rem;
   padding: 1rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+  box-shadow: 4px 5px #bf4e30;
 }
 
 .selectedProperty {
   width: 100%;
+  /* padding: 2rem; */
   margin-bottom: 2rem;
 }
 

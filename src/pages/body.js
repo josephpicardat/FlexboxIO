@@ -30,36 +30,7 @@ function Body() {
       {/* Display */}
       {/* if state.value is between 5 - 8 && state.classnma === align-self then box2 is this */}
       {/* use tenerary operator */}
-      <section className={state.className}>
-        {boxLoop()}
-        {/* <div className="box">
-          <h6 className="text">Box 1</h6>
-        </div>
-        <div className="box">
-          <h6 className="text">Box 2</h6>
-        </div>
-        <div className="box">
-          <h6 className="text">Box 3</h6>
-        </div> */}
-        {/* <div className="box">
-          <h6 className="text">Box 4</h6>
-        </div>
-        <div className="box">
-          <h6 className="text">Box 5</h6>
-        </div> */}
-        {/* <div className="box">
-          <h6 className="text">Box 5</h6>
-        </div>
-        <div className="box">
-          <h6 className="text">Box 5</h6>
-        </div>
-        <div className="box">
-          <h6 className="text">Box 5</h6>
-        </div>
-        <div className="box">
-          <h6 className="text">Box 5</h6>
-        </div> */}
-      </section>
+      <section className={state.className}>{boxLoop()}</section>
     </div>
   );
 }

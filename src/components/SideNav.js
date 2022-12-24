@@ -13,33 +13,6 @@ function SideNav() {
     setShow(!show);
   };
 
-  const flexed = {
-    flexDirection: ['fd-Row', 'fd-RowReverse', 'fd-column', 'fd-ColumnReverse'],
-    flexWrap: ['fw-NoWrap', 'fw-Wrap', 'fw-WrapReverse'],
-    alignItems: [
-      'ai-FlexStart',
-      'ai-FlexEnd',
-      'ai-Center',
-      'ai-Baseline',
-      'ai-stretch',
-    ],
-    justifyContent: [
-      'jc-FlexStart',
-      'jc-FlexEnd',
-      'jc-SpaceBetween',
-      'jc-Center',
-      'jc-SpaceAround',
-    ],
-    alignContent: [
-      'ac-FlexStart',
-      'ac-FlexEnd',
-      'ac-Center',
-      'ac-SpaceBetween',
-      'ac-SpaceAround',
-      'ac-Stretch',
-    ],
-  };
-
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>

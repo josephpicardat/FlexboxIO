@@ -78,7 +78,11 @@
   padding: 1rem;
   font-size: 2rem;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+  box-shadow: 4px 5px #bf4e30;
+}
+
+.individualProperties:hover {
+  box-shadow: 2px 3px #bf4e30;
 }
 
 .individualProperties {
