@@ -1,12 +1,15 @@
-import './App.css';
 import Body from './pages/body';
 import SideNav from './components/SideNav';
+import { UserProvider } from './utils/UserProvider';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <SideNav />
-      <Body />
+      <UserProvider>
+        <SideNav />
+        <Body />
+      </UserProvider>
     </div>
   );
 }

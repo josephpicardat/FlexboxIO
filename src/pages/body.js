@@ -1,60 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { UserContext } from '../utils/UserProvider';
+import Property from '../components/SelectedProperty';
 import '../components/css/Body.css';
 import '../components/css/flex.css';
 import '../components/css/Property.css';
 
 function Body() {
-  const [flex, setFlex] = useState('jc-SpaceBetween');
-  const [button, setButton] = useState('propertyButtons');
+  const [state, dispatch] = useContext(UserContext);
 
-  const flexed = {
-    flexDirection: ['fd-Row', 'fd-RowReverse', 'fd-column', 'fd-ColumnReverse'],
-    flexWrap: ['fw-NoWrap', 'fw-Wrap', 'fw-WrapReverse'],
-    alignItems: [
-      'ai-FlexStart',
-      'ai-FlexEnd',
-      'ai-Center',
-      'ai-Baseline',
-      'ai-stretch',
-    ],
-    justifyContent: [
-      'jc-FlexStart',
-      'jc-FlexEnd',
-      'jc-SpaceBetween',
-      'jc-Center',
-      'jc-SpaceAround',
-    ],
-    alignContent: [
-      'ac-FlexStart',
-      'ac-FlexEnd',
-      'ac-Center',
-      'ac-SpaceBetween',
-      'ac-SpaceAround',
-      'ac-Stretch',
-    ],
-  };
-
-  const Property = flexed => {
-    return (
-      <div className="propertyWrapper">
-        <h2 className="propertyName">Justify-Content:</h2>
-        <ul className="propertyList">
-          {flexed.map((flexes, index) => (
-            <li
-              key={index}
-              className="propertyItems"
-              onClick={() => {
-                setFlex(flexes);
-                setButton('filledPropertyButtons');
-              }}
-            >
-              <button className={button}></button>
-              {flexes}
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
+  const boxLoop = () => {
+    return Array(state.box)
+      .fill(0)
+      .map((box, index) => (
+        <div className="box" key={index}>
+          <h6 className="text">Box {index + 1}</h6>
+        </div>
+      ));
   };
 
   return (
@@ -63,12 +24,15 @@ function Body() {
 
       {/* Display Property */}
       <section className="selectedProperty">
-        {Property(flexed.justifyContent)}
+        <Property />
       </section>
 
       {/* Display */}
-      <section className={flex}>
-        <div className="box">
+      {/* if state.value is between 5 - 8 && state.classnma === align-self then box2 is this */}
+      {/* use tenerary operator */}
+      <section className={state.className}>
+        {boxLoop()}
+        {/* <div className="box">
           <h6 className="text">Box 1</h6>
         </div>
         <div className="box">
@@ -76,7 +40,25 @@ function Body() {
         </div>
         <div className="box">
           <h6 className="text">Box 3</h6>
+        </div> */}
+        {/* <div className="box">
+          <h6 className="text">Box 4</h6>
         </div>
+        <div className="box">
+          <h6 className="text">Box 5</h6>
+        </div> */}
+        {/* <div className="box">
+          <h6 className="text">Box 5</h6>
+        </div>
+        <div className="box">
+          <h6 className="text">Box 5</h6>
+        </div>
+        <div className="box">
+          <h6 className="text">Box 5</h6>
+        </div>
+        <div className="box">
+          <h6 className="text">Box 5</h6>
+        </div> */}
       </section>
     </div>
   );

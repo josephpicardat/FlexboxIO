@@ -176,3 +176,76 @@
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
 }
+/* Align-Content */
+.ac-FlexStart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}
+.ac-FlexEnd {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}
+.ac-Center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}
+.ac-SpaceBetween {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}
+.ac-SpaceAround {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}
+.ac-Stretch {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}

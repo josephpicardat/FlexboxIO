@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+import { UserContext } from '../utils/UserProvider';
 import { IconContext } from 'react-icons';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import '../components/css/SideNav.css';
-import Property from '../pages/body';
-// import '../components/css/Navbar.css';
 
 function SideNav() {
   const [show, setShow] = useState(false);
+  const [state, dispatch] = React.useContext(UserContext);
 
   const close = () => {
     setShow(!show);
@@ -52,34 +52,92 @@ function SideNav() {
               <div className="navbar-toggle">
                 <AiIcons.AiOutlineClose />
               </div>
-              <div className="navProperties">
-                <h2 className="headerProperty">
-                  Properties for the flex container
-                </h2>
+              <div className="navPropertiesWrapper">
+                <div className="navProperties">
+                  <h2 className="headerProperty">
+                    Properties for the flex container
+                  </h2>
 
-                <h6
-                  className="individualProperties"
-                  onClick={() => {
-                    Property(flexed.flexDirection);
-                  }}
-                >
-                  Flex-Direction
-                </h6>
-                <h6 className="individualProperties">Flex-Wrap</h6>
-                <h6 className="individualProperties">Align-Items</h6>
-                <h6 className="individualProperties">Justify-Content</h6>
-                <h6 className="individualProperties">Align-Content</h6>
-              </div>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Flex-Direction' });
+                    }}
+                  >
+                    Flex-Direction
+                  </h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Flex-Wrap' });
+                    }}
+                  >
+                    Flex-Wrap
+                  </h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Align-Items' });
+                    }}
+                  >
+                    Align-Items
+                  </h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Justify-Content' });
+                    }}
+                  >
+                    Justify-Content
+                  </h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Align-Content' });
+                    }}
+                  >
+                    Align-Content
+                  </h6>
+                </div>
 
-              <div className="navProperties">
-                <h2 className="headerProperty">
-                  Properties for the flex items
-                </h2>
+                <div className="navProperties" id="navPropertiesFlexItem">
+                  <h2 className="headerProperty">
+                    Properties for the flex items
+                  </h2>
 
-                <h6 className="individualProperties">Align-Self</h6>
-                <h6 className="individualProperties">Flex-Grow</h6>
-                <h6 className="individualProperties">Flex</h6>
-                <h6 className="individualProperties">Order</h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Align-Self' });
+                    }}
+                  >
+                    Align-Self
+                  </h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Flex-Grow' });
+                    }}
+                  >
+                    Flex-Grow
+                  </h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Flex' });
+                    }}
+                  >
+                    Flex
+                  </h6>
+                  <h6
+                    className="individualProperties"
+                    onClick={() => {
+                      dispatch({ type: 'Order' });
+                    }}
+                  >
+                    Order
+                  </h6>
+                </div>
               </div>
             </div>
           </nav>
