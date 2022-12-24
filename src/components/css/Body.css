@@ -14,7 +14,8 @@
   padding: 1rem;
   font-size: 3rem;
   margin-bottom: 2rem;
-  box-shadow: 4px 5px #bf4e30;
+  box-shadow: 4px 5px #3a3335;
+  color: #0d99ff;
 }
 
 .selectedProperty {

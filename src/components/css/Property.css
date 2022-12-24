@@ -16,6 +16,7 @@
 }
 
 .propertyList {
+  height: 7rem;
   display: flex;
   align-items: center;
   overflow-x: scroll;
@@ -31,6 +32,10 @@
   margin-right: 2rem;
   display: flex;
   align-items: center;
+}
+
+.propertyItems:hover {
+  box-shadow: 2px 3px #3a3335;
 }
 
 .propertyButtons {
