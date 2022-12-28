@@ -32,6 +32,8 @@ const Property = () => {
             {/* Radio button => look up */}
             {flexes}
           </li>
+
+          // If state.value is between 5 - 8
         ))}
       </ul>
     </div>

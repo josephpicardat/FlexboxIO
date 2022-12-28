@@ -37,6 +37,24 @@
 .box {
   width: 10rem;
   height: 10rem;
+}
+
+.tallBox {
+  width: 10rem;
+  height: 20rem;
+}
+
+.autoBoxHeight {
+  width: 10rem;
+  height: auto;
+}
+
+.autoBoxWidth {
+  width: auto;
+  height: 10rem;
+}
+
+.boxStyle {
   background-color: #0d99ff;
   border: solid #0c7fd1 0.25rem;
   border-radius: 0.5rem;
@@ -50,4 +68,13 @@
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.backgroundBox {
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
 }

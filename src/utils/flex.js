@@ -14,7 +14,7 @@ export const flexed = [
       'ai-FlexEnd',
       'ai-Center',
       'ai-Baseline',
-      'ai-stretch',
+      'ai-Stretch',
     ],
   },
   {
@@ -37,5 +37,32 @@ export const flexed = [
       'ac-SpaceAround',
       'ac-Stretch',
     ],
+  },
+  {
+    name: 'Align-Self',
+    array: ['as-Row', 'as-RowReverse', 'as-Column', 'as-ColumnReverse'],
+  },
+  {
+    name: 'Align-Self',
+    array: [
+      'as-Auto',
+      'as-FlexStart',
+      'as-FlexEnd',
+      'as-Center',
+      'as-Baseline',
+      'as-Stretch',
+    ],
+  },
+  {
+    name: 'Flex-Grow',
+    array: ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5'],
+  },
+  {
+    name: 'Flex-Shrink',
+    array: ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5'],
+  },
+  {
+    name: 'Order',
+    array: ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5'],
   },
 ];
