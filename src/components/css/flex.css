@@ -111,3 +111,107 @@
   flex-direction: column;
   align-content: stretch;
 }
+
+/* Align-Self */
+.as-Auto {
+  width: 10rem;
+  height: 20rem;
+  display: flex;
+  align-self: auto;
+}
+.as-FlexStart {
+  width: 10rem;
+  height: 20rem;
+  display: flex;
+  align-self: flex-start;
+}
+.as-FlexEnd {
+  width: 10rem;
+  height: 20rem;
+  display: flex;
+  align-self: flex-end;
+}
+.as-Center {
+  width: 10rem;
+  height: 20rem;
+  display: flex;
+  align-self: center;
+}
+.as-Baseline {
+  width: 10rem;
+  height: 20rem;
+  display: flex;
+  align-self: baseline;
+}
+.as-Stretch {
+  width: 10rem;
+  height: auto;
+  display: flex;
+  align-self: stretch;
+}
+
+/* Flex-Grow */
+.Element-1 {
+  display: flex;
+  flex-grow: 0;
+}
+.Element-2 {
+  display: flex;
+  flex-grow: 0;
+}
+.Element-3 {
+  display: flex;
+  flex-grow: 0;
+}
+.Element-4 {
+  display: flex;
+  flex-grow: 0;
+}
+.Element-5 {
+  display: flex;
+  flex-grow: 0;
+}
+
+/* Flex-Shrink */
+.Element-1 {
+  display: flex;
+  flex-shrink: 1;
+}
+.Element-2 {
+  display: flex;
+  flex-shrink: 1;
+}
+.Element-3 {
+  display: flex;
+  flex-shrink: 1;
+}
+.Element-4 {
+  display: flex;
+  flex-shrink: 1;
+}
+.Element-5 {
+  display: flex;
+  flex-shrink: 1;
+}
+
+/* Order */
+.Element-1 {
+  display: flex;
+  order: 0;
+}
+.Element-2 {
+  display: flex;
+  order: 0;
+}
+.Element-3 {
+  display: flex;
+  order: 0;
+}
+.Element-4 {
+  display: flex;
+  order: 0;
+}
+.Element-5 {
+  display: flex;
+  order: 0;
+}

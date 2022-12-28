@@ -12,13 +12,13 @@ export const reducer = (state, action) => {
     case 'Align-Content':
       return { value: 4, box: 5, className: 'ac-FlexStart' };
     case 'Align-Self':
-      return { value: 5 };
+      return { value: 5, box: 5, className: 'as-Auto' };
     case 'Flex-Grow':
-      return { value: 6 };
-    case 'Flex':
-      return { value: 7 };
+      return { value: 6, box: 5, className: 'ac-FlexStart' };
+    case 'Flex-Shrink':
+      return { value: 6, box: 5, className: 'ac-FlexStart' };
     case 'Order':
-      return { value: 8 };
+      return { value: 8, box: 5, className: 'ac-FlexStart' };
 
     case 'className':
       return { ...state, className: action.payload };

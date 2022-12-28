@@ -40,10 +40,6 @@ export const flexed = [
   },
   {
     name: 'Align-Self',
-    array: ['as-Row', 'as-RowReverse', 'as-Column', 'as-ColumnReverse'],
-  },
-  {
-    name: 'Align-Self',
     array: [
       'as-Auto',
       'as-FlexStart',
@@ -55,14 +51,14 @@ export const flexed = [
   },
   {
     name: 'Flex-Grow',
-    array: ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5'],
+    array: ['Element-1', 'Element-2', 'Element-3', 'Element-4', 'Element-5'],
   },
   {
     name: 'Flex-Shrink',
-    array: ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5'],
+    array: ['Element-1', 'Element-2', 'Element-3', 'Element-4', 'Element-5'],
   },
   {
     name: 'Order',
-    array: ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5'],
+    array: ['Element-1', 'Element-2', 'Element-3', 'Element-4', 'Element-5'],
   },
 ];

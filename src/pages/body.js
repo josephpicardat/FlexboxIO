@@ -21,7 +21,12 @@ function Body() {
       {/* Display */}
       {/* if state.value is between 5 - 8 && state.classnma === align-self then box2 is this */}
       {/* use tenerary operator */}
-      <section className={'backgroundBox ' + state.className}>
+      <section
+        className={
+          'backgroundBox ' +
+          (state.value < 5 ? state.className : 'flexItemContainer')
+        }
+      >
         <BoxLoop />
       </section>
     </div>

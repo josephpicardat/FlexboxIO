@@ -97,10 +97,10 @@ function SideNav() {
                   <h6
                     className="individualProperties"
                     onClick={() => {
-                      dispatch({ type: 'Flex' });
+                      dispatch({ type: 'Flex-Shrink' });
                     }}
                   >
-                    Flex
+                    Flex-Shrink
                   </h6>
                   <h6
                     className="individualProperties"

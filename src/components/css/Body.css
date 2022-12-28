@@ -78,3 +78,9 @@
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
 }
+
+.flexItemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

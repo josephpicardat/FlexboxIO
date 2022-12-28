@@ -47,19 +47,42 @@ const BoxLoop = () => {
       </div>
     ));
 
-  if (state.value === 2) {
-    if (state.className === 'ai-Stretch') {
-      console.log('align items stretch');
-      return virticalStretch;
-    } else {
-      return middleBoxes;
+  // Calculating Flex Items
+  const flexItems = Array(state.box)
+    .fill(0)
+    .map((box, index) => (
+      <div
+        className={
+          'boxStyle ' +
+          (index === middleArrayOperator ? state.className : 'box')
+        }
+        key={index}
+      >
+        <h6 className="text">Box {index + 1}</h6>
+      </div>
+    ));
+
+  if (state.value < 5) {
+    if (state.value === 2) {
+      if (state.className === 'ai-Stretch') {
+        console.log('align items stretch');
+        return virticalStretch;
+      } else {
+        return middleBoxes;
+      }
     }
-  }
-  if (state.className === 'ac-Stretch') {
-    console.log('align content stretch');
-    return horizontalStretch;
+    if (state.className === 'ac-Stretch') {
+      console.log('align content stretch');
+      return horizontalStretch;
+    } else {
+      return allBoxes;
+    }
+  } else if (state.value >= 5) {
+    if (state.value === 5) {
+      return flexItems;
+    }
   } else {
-    return allBoxes;
+    return;
   }
 };
 
