@@ -150,68 +150,75 @@
   align-self: stretch;
 }
 
+:root {
+  --Element1: 0;
+  --Element2: 0;
+  --Element3: 0;
+  --Element4: 0;
+  --Element5: 0;
+}
+
 /* Flex-Grow */
-.Element-1 {
+.GrowElement-1 {
   display: flex;
-  flex-grow: 0;
+  flex-grow: var(--Element1);
 }
-.Element-2 {
+.GrowElement-2 {
   display: flex;
-  flex-grow: 0;
+  flex-grow: var(--Element2);
 }
-.Element-3 {
+.GrowElement-3 {
   display: flex;
-  flex-grow: 0;
+  flex-grow: var(--Element3);
 }
-.Element-4 {
+.GrowElement-4 {
   display: flex;
-  flex-grow: 0;
+  flex-grow: var(--Element4);
 }
-.Element-5 {
+.GrowElement-5 {
   display: flex;
-  flex-grow: 0;
+  flex-grow: var(--Element5);
 }
 
 /* Flex-Shrink */
-.Element-1 {
-  display: flex;
-  flex-shrink: 1;
+.ShrinkElement-1 {
+  flex-shrink: var(--Element1);
 }
-.Element-2 {
+.ShrinkElement-2 {
   display: flex;
-  flex-shrink: 1;
+  flex-shrink: var(--Element2);
 }
-.Element-3 {
+.ShrinkElement-3 {
   display: flex;
-  flex-shrink: 1;
+  flex-shrink: var(--Element3);
 }
-.Element-4 {
+.ShrinkElement-4 {
   display: flex;
-  flex-shrink: 1;
+  flex-shrink: var(--Element4);
 }
-.Element-5 {
+.ShrinkElement-5 {
   display: flex;
-  flex-shrink: 1;
+  flex-shrink: var(--Element5);
 }
 
 /* Order */
-.Element-1 {
+.OrderElement-1 {
   display: flex;
-  order: 0;
+  order: var(--Element1);
 }
-.Element-2 {
+.OrderElement-2 {
   display: flex;
-  order: 0;
+  order: var(--Element2);
 }
-.Element-3 {
+.OrderElement-3 {
   display: flex;
-  order: 0;
+  order: var(--Element3);
 }
-.Element-4 {
+.OrderElement-4 {
   display: flex;
-  order: 0;
+  order: var(--Element4);
 }
-.Element-5 {
+.OrderElement-5 {
   display: flex;
-  order: 0;
+  order: var(--Element5);
 }

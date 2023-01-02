@@ -54,6 +54,11 @@
   height: 10rem;
 }
 
+.shrinkBox {
+  height: 10rem;
+  flex-basis: 25%;
+}
+
 .boxStyle {
   background-color: #0d99ff;
   border: solid #0c7fd1 0.25rem;

@@ -14,11 +14,26 @@ export const reducer = (state, action) => {
     case 'Align-Self':
       return { value: 5, box: 5, className: 'as-Auto' };
     case 'Flex-Grow':
-      return { value: 6, box: 5, className: 'ac-FlexStart' };
+      return {
+        value: 6,
+        box: 5,
+        className: 'GrowElement-1',
+        active: !state.active,
+      };
     case 'Flex-Shrink':
-      return { value: 6, box: 5, className: 'ac-FlexStart' };
+      return {
+        value: 7,
+        box: 5,
+        className: 'ShrinkElement-1',
+        active: !state.active,
+      };
     case 'Order':
-      return { value: 8, box: 5, className: 'ac-FlexStart' };
+      return {
+        value: 8,
+        box: 5,
+        className: 'OrderElement-1',
+        active: !state.active,
+      };
 
     case 'className':
       return { ...state, className: action.payload };
@@ -32,4 +47,5 @@ export const initialState = {
   value: 3,
   box: 3,
   className: 'jc-SpaceBetween',
+  active: false,
 };

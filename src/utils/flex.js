@@ -51,14 +51,32 @@ export const flexed = [
   },
   {
     name: 'Flex-Grow',
-    array: ['Element-1', 'Element-2', 'Element-3', 'Element-4', 'Element-5'],
+    array: [
+      'GrowElement-1:',
+      'GrowElement-2:',
+      'GrowElement-3:',
+      'GrowElement-4:',
+      'GrowElement-5:',
+    ],
   },
   {
     name: 'Flex-Shrink',
-    array: ['Element-1', 'Element-2', 'Element-3', 'Element-4', 'Element-5'],
+    array: [
+      'ShrinkElement-1:',
+      'ShrinkElement-2:',
+      'ShrinkElement-3:',
+      'ShrinkElement-4:',
+      'ShrinkElement-5:',
+    ],
   },
   {
     name: 'Order',
-    array: ['Element-1', 'Element-2', 'Element-3', 'Element-4', 'Element-5'],
+    array: [
+      'OrderElement-1:',
+      'OrderElement-2:',
+      'OrderElement-3:',
+      'OrderElement-4:',
+      'OrderElement-5:',
+    ],
   },
 ];

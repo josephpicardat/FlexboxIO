@@ -1,0 +1,18 @@
+.counterWrapper {
+  /* width: 15rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.iconButtons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.25rem;
+}
+
+.upArrow:hover,
+.downArrow:hover {
+  color: #0d99ff;
+}
