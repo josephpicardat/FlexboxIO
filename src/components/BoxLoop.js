@@ -65,7 +65,11 @@ const BoxLoop = () => {
   const GrowElements = Array(state.box)
     .fill(0)
     .map((box, index) => (
-      <div className={'boxStyle box GrowElement-' + (index + 1)} key={index}>
+      <div
+        className={'boxStyle box '}
+        key={index}
+        style={{ flexGrow: state[`count${index + 1}`] }}
+      >
         <h6 className="text">Box {index + 1}</h6>
       </div>
     ));
@@ -73,8 +77,9 @@ const BoxLoop = () => {
     .fill(0)
     .map((box, index) => (
       <div
-        className={'boxStyle shrinkBox ShrinkElement-' + (index + 1)}
+        className={'boxStyle shrinkBox'}
         key={index}
+        style={{ flexShrink: state[`count${index + 1}`] }}
       >
         <h6 className="text">Box {index + 1}</h6>
       </div>
@@ -82,7 +87,11 @@ const BoxLoop = () => {
   const OrderElements = Array(state.box)
     .fill(0)
     .map((box, index) => (
-      <div className={'boxStyle box OrderElement-' + (index + 1)} key={index}>
+      <div
+        className={'boxStyle box'}
+        key={index}
+        style={{ order: state[`count${index + 1}`] }}
+      >
         <h6 className="text">Box {index + 1}</h6>
       </div>
     ));

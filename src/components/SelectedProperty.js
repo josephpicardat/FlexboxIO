@@ -8,8 +8,6 @@ import './css/Body.css';
 const Property = () => {
   const [state, dispatch] = useContext(UserContext);
 
-  console.log(state.active);
-
   return (
     <div className="propertyWrapper">
       <h2 className="propertyName">{flexed[state.value].name}</h2>
@@ -42,9 +40,6 @@ const Property = () => {
       ) : state.active === false ? (
         <ul className="propertyList">
           {flexed[state.value].array.map((flexes, index) => (
-            // own component =>
-            //   </ Component flexes=(flexes) />
-
             <li key={index} className="propertyItems">
               {flexes} <Counter index={index + 1} />
             </li>

@@ -1,62 +1,40 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { UserContext } from '../utils/UserProvider';
 import { FiChevronUp, FiChevronDown } from 'react-icons/fi';
-import { flexed } from '../utils/flex';
 import './css/Count.css';
 
 const Counter = index => {
   const [state, dispatch] = useContext(UserContext);
 
-  let value;
-  let order;
-  if (flexed[state.value].name === 'Order') {
-    value = 0;
-    order = true;
-  } else {
-    value = 1;
-    order = false;
-  }
-
-  const [count, setCount] = useState(value);
-
-  useEffect(() => {
-    document.documentElement.style.setProperty(
-      '--Element' + index.index,
-      count,
-    );
-  }, [count, index]);
-
+  const updateCount = value => {
+    dispatch({ type: `updateCount`, payload: { index, value } });
+  };
   const increment = () => {
-    setCount(function (prevCount) {
-      return (prevCount += 1);
-    });
+    console.log('not disabled');
+    updateCount((state[`count${index.index}`] += 1));
   };
 
   const decrement = () => {
-    if (order) {
-      setCount(function (prevCount) {
-        if (prevCount > 0) {
-          return (prevCount -= 1);
-        } else {
-          return (prevCount = 1);
-        }
-      });
-    } else {
-      setCount(function (prevCount) {
-        if (prevCount > 1) {
-          return (prevCount -= 1);
-        } else {
-          return (prevCount = 1);
-        }
-      });
+    let value = (state[`count${index.index}`] -= 1);
+    let checkValue = 1;
+    if (state.className === 'Order') {
+      checkValue = 0;
     }
+    if (value <= checkValue) {
+      value = checkValue;
+    }
+
+    updateCount(value);
   };
+
+  // let count = true;
 
   return (
     <div className="counterWrapper">
-      {count}
+      {state[`count${index.index}`]}
       <div className="iconButtons">
         <FiChevronUp
+          disabled={false}
           onClick={() => {
             increment();
           }}

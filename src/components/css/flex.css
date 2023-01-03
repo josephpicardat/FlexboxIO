@@ -150,13 +150,13 @@
   align-self: stretch;
 }
 
-:root {
+/* :root {
   --Element1: 0;
   --Element2: 0;
   --Element3: 0;
   --Element4: 0;
   --Element5: 0;
-}
+} */
 
 /* Flex-Grow */
 .GrowElement-1 {
