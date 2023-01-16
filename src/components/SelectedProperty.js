@@ -7,7 +7,6 @@ import './css/Body.css';
 
 const Property = () => {
   const [state, dispatch] = useContext(UserContext);
-
   return (
     <div className="propertyWrapper">
       <h2 className="propertyName">{flexed[state.value].name}</h2>

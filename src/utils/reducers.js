@@ -9,11 +9,21 @@ export const reducer = (state, action) => {
       count5: value,
     };
   };
+  const boxNumber = () => {
+    const { innerWidth: width } = window;
+    if (width > 1920) {
+      return { box: 18 };
+    } else if (1366 < width && width <= 1920) {
+      return { box: 12 };
+    } else if (width <= 1366) {
+      return { box: 8 };
+    }
+  };
   switch (action.type) {
     case 'Flex-Direction':
       return { ...state, value: 0, box: 5, className: 'fd-Row' };
     case 'Flex-Wrap':
-      return { ...state, value: 1, box: 12, className: 'fw-Wrap' };
+      return { ...state, value: 1, className: 'fw-Wrap', ...boxNumber() };
     case 'Align-Items':
       return { ...state, value: 2, box: 5, className: 'ai-FlexStart' };
     case 'Justify-Content':
